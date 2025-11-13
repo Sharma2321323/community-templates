@@ -1,4 +1,5 @@
 { pkgs, environment ? "open-ai-node", ... }: {
+  channel = "stable-25.05";
     packages = if environment == "open-ai-node" then [ pkgs.nodejs_24 ] else [];
   bootstrap = ''
     mkdir "$out"
