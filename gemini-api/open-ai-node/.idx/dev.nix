@@ -22,9 +22,6 @@
         default.openFiles = [ "main.js" ];
       };
       # To run something each time the workspace is (re)started, use the `onStart` hook
-      onStart = {
-        run-server = "node main.js";
     };
   };
-};
 }
