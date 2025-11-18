@@ -18,7 +18,7 @@ func main() {
 	app := pocketbase.New()
 
 	var hooksDir string = os.Getenv("PB_HOOKS_DIR")
-	var hooksWatch bool = true
+	var hooksWatch bool = false
 	var hooksPool int = 25
 	var migrationsDir string
 	var automigrate bool = true
