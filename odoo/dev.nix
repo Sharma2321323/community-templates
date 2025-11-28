@@ -5,12 +5,7 @@
   channel = "stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.gcc
-    pkgs.python311
-    pkgs.openldap
-    pkgs.openldap.dev
-    pkgs.cyrus_sasl.dev
-    pkgs.libpqxx
+    $PACKAGES
   ];
   # Sets environment variables in the workspace
   env = { };
