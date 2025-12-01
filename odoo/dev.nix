@@ -40,6 +40,7 @@
           python -m pip install urllib3 werkzeug num2words pytz passlib
           mkdir -p /home/user/odoo/custom_addons
           touch odoo.conf
+          odoo-bin --save --stop-after-init
           mv ../.odoorc odoo.conf
           sed -i                                                                 \
               -e "/^addons_path =/ s/\$/,\/home\/user\/$WS_NAME\/custom_addons/" \
