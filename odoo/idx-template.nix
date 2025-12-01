@@ -7,7 +7,7 @@
     odoo = rec {
       packagesV15 = [
         "pkgs.gcc"
-        "pkgs.python310"
+        "pkgs.python39"
         "pkgs.openldap"
         "pkgs.openldap.dev"
         "pkgs.cyrus_sasl.dev"
