@@ -36,7 +36,7 @@
           ln -s /usr/lib/libldap.so .venv/lib/libldap_r.so
           source .venv/bin/activate
           sed -i '/^python-ldap==/d' .idx/.data/odoo/requirements.txt
-          NIX_LDFLAGS="$NIX_LDFLAGS -L$VIRTUAL_ENV/lib" pip install -r .idx/.data/odoo/requirements.txt          odoo-bin --save --stop-after-init
+          NIX_LDFLAGS="$NIX_LDFLAGS -L$VIRTUAL_ENV/lib" pip install -r .idx/.data/odoo/requirements.txt
           python -m pip install urllib3 werkzeug num2words pytz passlib
           mkdir -p /home/user/odoo/custom_addons
           touch odoo.conf
