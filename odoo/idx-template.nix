@@ -48,7 +48,7 @@
           -e 's/$PACKAGES/${builtins.concatStringsSep "\\\n    " odoo.${"packagesV" + version}}/g' \
           .idx/dev.nix
 
-      mkdir custom_addons/
+      
 
       cd ..
       chmod -R +w "$out"
