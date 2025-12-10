@@ -1,14 +1,14 @@
 {
   "name": "PocketBase",
   "description": "Open Source backend for your next SaaS and Mobile app in 1 file",
-  "tags": [
+  "categories": [
     "Web app",
     "Backend",
     "CMS"
   ],
-  "icon": "./icon.svg",
-  "author": "Rody Davis",
+  "icon": "https://pocketbase.io/images/logo.svg",
   "website": "https://pocketbase.io/",
+  "publisher": "Rody Davis",
   "params": [
     {
       "id": "module",
