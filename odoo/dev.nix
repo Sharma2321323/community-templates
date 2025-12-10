@@ -33,7 +33,7 @@
         odoo-install = ''
           python -m venv .venv
           ln -s /home/user/$WS_NAME/.idx/.data/odoo/odoo-bin .venv/bin/odoo-bin
-          ln -s /usr/lib/libldap.so .venv/lib/libldap_r.so
+          
           source .venv/bin/activate
           NIX_LDFLAGS="$NIX_LDFLAGS -L$VIRTUAL_ENV/lib" pip install -r .idx/.data/odoo/requirements.txt
           odoo-bin --save --stop-after-init
