@@ -38,6 +38,7 @@
           NIX_LDFLAGS="$NIX_LDFLAGS -L$VIRTUAL_ENV/lib" pip install -r .idx/.data/odoo/requirements.txt
           odoo-bin --save --stop-after-init
           mv ../.odoorc odoo.conf
+          mkdir -p /home/user/$WS_NAME/custom_addons
           sed -i                                                                 \
               -e "/^addons_path =/ s/\$/,\/home\/user\/$WS_NAME\/custom_addons/" \
               -e "s/.local\/share\/Odoo/$WS_NAME\/.idx\/.data\/odoo-data/g"      \
