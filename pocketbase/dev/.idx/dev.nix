@@ -37,10 +37,6 @@
             "."
             "-e"
             "go,html"
-            "--ignore"
-            "pb_data"
-            "--ignore"
-            "pb_migrations"
             "-x"
             "go run main.go serve --http='localhost:$PORT'"
           ];
