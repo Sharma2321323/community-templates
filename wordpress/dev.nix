@@ -34,7 +34,7 @@
         };
       };
     };
-    Workspace lifecycle hooks
+    #Workspace lifecycle hooks
     workspace = {
       # Runs when a workspace is first created
       onCreate = {
